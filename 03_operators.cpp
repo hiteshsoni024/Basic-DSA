@@ -26,16 +26,13 @@ cout<<"division is:"<<division<<endl;
 //remainder
 remender=a%b;
 cout<<"remender is:"<<remender<<endl;
+//relational operator
 cout<<(3>5)<<endl;//false -> 0
 cout<<(3<5)<<endl;//true -> 1
-       
-
-    //relational operator
-    
-
-
-
-    //logical operator
+cout<<(4<=5)<<endl;
+cout<<("Hitesh"=="HITESH");
+cout<<("Hitesh"=="Hitesh"); 
+//logical operator
 
     return 0;
 } 
