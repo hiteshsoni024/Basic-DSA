@@ -22,7 +22,9 @@ cout<<"multiply is:"<<multiple<<endl;
 //devision
 division=a/b;
 cout<<"division is:"<<division<<endl;
-        
+//(int)/(int) = int
+//(int)/(float) = float or vise versa
+
 //remainder
 remender=a%b;
 cout<<"remender is:"<<remender<<endl;
@@ -30,9 +32,18 @@ cout<<"remender is:"<<remender<<endl;
 cout<<(3>5)<<endl;//false -> 0
 cout<<(3<5)<<endl;//true -> 1
 cout<<(4<=5)<<endl;
-cout<<("Hitesh"=="HITESH");
+cout<<("Hitesh"=="HITESH")<<endl;
 cout<<("Hitesh"=="Hitesh"); 
 //logical operator
-
+/*
+OR -> ||
+AND -> &&
+NOT -> !
+*/
+/*
+binary operator -> Add , Sub, Multiply , Divide , Modulo
+Uninary operator -> a++ (post increment) a--(post decrement) 
+                    ++a (pre increment)  --a(pre decrement)     
+*/
     return 0;
 } 

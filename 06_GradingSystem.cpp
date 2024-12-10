@@ -8,7 +8,7 @@ int main(){
     if(marks>100){
         cout<<"Enter your marks out of 100";
     }else if(marks==100){
-        cout<<"you got 100/100 Grade: A";
+        cout<<"you got 100/100 Grade: A+";
     } else if(marks>=90 && marks <=99){
         cout<<"Grade: A";
     }else if(marks>=75 && marks<90){
