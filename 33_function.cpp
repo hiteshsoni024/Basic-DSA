@@ -1,0 +1,1 @@
+//check nummber n is prime or not
