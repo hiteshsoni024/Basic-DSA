@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 //function for factorial calculation
-int factorial(int x){
+long long factorial(int x){
    int fact = 1;
     if (x == 0 || x==1){
     return 1;
@@ -16,7 +16,7 @@ int factorial(int x){
 
 
 //function for nPr
-int nPr(int n,int r){
+long long nPr(int n,int r){
    if (r > n) return 0; // Invalid case
    int ans = factorial(n)/factorial(n-r);
    return ans;
@@ -25,7 +25,7 @@ int nPr(int n,int r){
 
 
 //function for nCr
-int nCr(int n, int r){
+long long nCr(int n, int r){
    if (r > n) return 0; // Invalid case
    int ans = factorial (n)/(factorial(r)*factorial(n-r));
    return ans;
