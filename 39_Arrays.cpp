@@ -6,7 +6,7 @@ int main(){
     cout<<"enter 1 for check largest number: \nenter 2 for check smallest number: "<<endl;
     cin>>choice;
     if(choice==1){
-        for (int i=0 ; i<=5 ; i++){
+        for (int i=1 ; i<5; i++){
             if(max <= arr[i+1]){
             max = arr[i+1];
             }
