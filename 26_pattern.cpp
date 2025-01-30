@@ -1,40 +1,38 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int n;
-    cout << "The number of rows: ";
-    cin >> n;
-    //top
-    for ( int i =0 ; i<n ; i++){
-        //space 
-        for (int j =0 ; j<n-i-1 ; j++){
-            cout << " ";
-        } 
 
-        cout<< "*";
+int main() {
+    int n = 5; // Height of the diamond (odd number)
 
-        if(i != 0 ){
-        //space
-            for(int j =0; j<2*i-1;j++){
-                cout<< " ";
+    // Upper half of the diamond
+    for (int i = 1; i <= n; i += 2) {
+        for (int j = 1; j <= n - i; j += 2) {
+            cout << "  ";
+        }
+        for (int j = 1; j <= i; j++) {
+            if (j == 1 || j == i) {
+                cout << "* ";
+            } else {
+                cout << "  ";
             }
-         cout<< "*";
         }
-        cout<<endl;
+        cout << endl;
     }
-    //bottom
-    for (int i=0; i<n-1; i++){
-        //space
-        for(int j =0; j<i+1;j++){
-            cout << " ";
-        } 
-        if( i != n-1 ){
-        for (int j=0; j<2*(n-i)-5; j++){
-            cout << " ";
+
+    // Lower half of the diamond
+    for (int i = n - 2; i >= 1; i -= 2) {
+        for (int j = 1; j <= n - i; j += 2) {
+            cout << "  ";
         }
-        cout<<"*";
+        for (int j = 1; j <= i; j++) {
+            if (j == 1 || j == i) {
+                cout << "* ";
+            } else {
+                cout << "  ";
+            }
         }
-        cout<<endl;
+        cout << endl;
     }
+
     return 0;
 }
