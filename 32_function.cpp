@@ -68,4 +68,8 @@ long long nCr(int n, int r){
        cout<<"Result is :"<<nCr(n,r);
    }
    return 0;    
+<<<<<<< HEAD
  }
+=======
+ }
+>>>>>>> a8a482ce2631ffacdd89581cabaf8d79513a75f9

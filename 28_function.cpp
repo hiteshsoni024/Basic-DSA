@@ -1,39 +1,22 @@
+//print nth Fabonacci
 #include<iostream>
 using namespace std;
-//function declaration
-// void myfunc(){
-//     cout<<"Hello this is a function";
-// }
-int myfunction(){
-    cout<<"Hello"<<endl;
-    return 5;
-}
-int sum(int a , int b){
-    int s =a+b;
-    return s;
-}
-int min(int a, int b, int c){
-    int min=0;
-    if(a<b && a<c){
-        cout<<"a is minimum";
-        min=a;
-    }else if (b<a && b<c){
-        cout<<"b is minimum";
-        min=b;
-    }else if (c<a && c<b){
-        cout<<"c is minimum";
-        min = c;
-    }
-    
-    return min;
+int fabonacci(int n){
+    int Fn, Fn1 = 1, Fn2 = 0;
+    if ( n <=1 ) return n;
 
+    for (int i=2; i<=n; i++){
+        Fn = Fn1 + Fn2;
+        Fn2 = Fn1;
+        Fn1 = Fn;
+
+    }
+return Fn1;
 }
-int main (){
-    //function invoke
-    // myfunc();
-    int val = myfunction();
-    cout<<"vale is :"<<val<<endl;
-    cout<<"the sum of 3 and 4 is :"<<sum(3,4)<<endl;
-    cout<<"minimum of 4 1 6 is :"<<min(4,1,6);
+int main(){
+    int n;
+    cout<<"enter the number of places you want to print fabonacci series: ";
+    cin>>n;
+    cout<<fabonacci(n);
     return 0;
-} 
+}
