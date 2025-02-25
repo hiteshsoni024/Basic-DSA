@@ -1,0 +1,22 @@
+Time Complexity = the rate at which the time taken increases whith respect to input size
+
+TC writes in big-O notation O(time taken)
+TC compute in worst case cenario
+avoid constent , avoid lower values
+
+//example
+if(int i = 0; i<n ; i++){
+    //code
+}
+this will runs for n time 
+
+types of case -> Best case -> least amout of iteration
+              -> Avg case  
+              -> worst case 
+
+notation in case of time -> Big -Oh [worst case] upper bound 
+        ->Theta avg Complexity
+        -> omega lowest bound
+
+Space Complexity -> Big oh -> size of instruction   
+                -> memory Space
